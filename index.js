@@ -24,7 +24,7 @@ artist=artist||unknown;
 time=time||"0:00:00";
 thumbnail=thumbnail||"icon";
 var startTimestamp=new Date(new Date().getTime()-timeToMs(time||"0:00:00"));
-console.log({details:title,state:artist,startTimestamp,largeImageKey:thumbnail,largeImageText:title,instance:false,smallImageKey:thumbnail=="icon"?undefined:"icon",smallImageText:"YouTube Music",buttons:[{label:"I want this too!",url:"https://chromewebstore.google.com/detail/changeable/poojaaachdjfkiggckefbngdegikcdob"}]});
+rpc.setActivity({details:title,state:artist,startTimestamp,largeImageKey:thumbnail,largeImageText:title,instance:false,smallImageKey:thumbnail=="icon"?undefined:"icon",smallImageText:"YouTube Music",buttons:[{label:"I want this too!",url:"https://chromewebstore.google.com/detail/changeable/poojaaachdjfkiggckefbngdegikcdob"}]});
 }
 function stop(){rpc.destroy();process.exit();}
 
